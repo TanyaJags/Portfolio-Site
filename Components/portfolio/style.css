@@ -1,0 +1,160 @@
+.imageContainer img{
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+.imageContainer{
+    width: 50%;
+}
+.portfolioItem .content{
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 48%;
+}
+.portfolioItem{
+    justify-content: space-between;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 25px;
+    background-color: #f4f4f2;
+
+}
+.portfolioItem .content h2{
+    font-family: MetroBold;
+    font-size: 5vw;
+    margin-bottom: 8px;
+}
+.portfolioItem .content .description{
+    font-size: 1.25vw;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+#ecolab button{
+    color: #226EFE;
+    background-color: #226EFE40;
+}
+#ecolab button:hover{
+    background-color: #226EFE60;
+}
+#ecolab h2, #ecolab .tools{
+    color: #226EFE;
+}
+
+#astonmartin button{
+    color: #0B4A3F;
+    background-color: #0B4A3F40;
+}
+#astonmartin button:hover{
+    background-color: #0B4A3F60;
+}
+#astonmartin h2, #astonmartin .tools{
+    color: #0B4A3F;
+}
+
+#ferrari button{
+    color: #c80003;
+    background-color: #c8000330;
+}
+#ferrari button:hover{
+    background-color: #c8000350;
+}
+#ferrari h2, #ferrari .tools{
+    color: #c80003;
+}
+
+#mclaren button{
+    color: #F18417;
+    background-color: #F1841740;
+}
+#mclaren button:hover{
+    background-color: #F1841760;
+}
+#mclaren h2, #mclaren .tools{
+    color: #F18417;
+}
+
+.portfolioItem .content button{
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    width: max-content;
+    font-size: 1vw;
+    cursor: pointer;
+}
+.portfolioItem .content .tools{
+    color: #686868;
+    margin-bottom: 5px;
+}
+.portfolioItem .content button:hover{
+    background-color: #e2374440;
+}
+.portfoliolist .portfolioItem:nth-child(odd){
+    flex-direction: row-reverse;
+}
+
+.portfoliolist .portfolioItem:nth-child(odd) .content{
+    align-items: start;
+    
+}
+
+.resumelink{
+    width: 100%;
+}
+.resumelink a{
+    background-color:#481D8A40;
+    padding: 1vw;
+    border-radius: 12px;
+    color: #481D8A;
+    font-size: 1.4vw;
+}
+
+.resumelink a:hover{
+    background-color:#481D8A60;
+}
+
+
+
+/* Mobile devices */
+@media only screen and (max-width: 960px) {
+    .aboutusContainer h1{
+        font-size: 18vw;
+    }
+    .aboutusContainer h5{
+        font-size: 7vw;
+    }
+    .aboutusContainer p{
+        font-size: 5vw;
+    }
+    .resumelink{
+        justify-content: center;
+    }
+    .resumelink a{
+        font-size: 7vw;
+        border-radius: 6px;
+        padding: 3vw;
+        margin-top: 5px;
+    }
+    .imageContainer{
+        width: 100%;
+    }
+    .portfolioItem .content{
+        width: 100%;
+        align-items: start;
+    }
+    .portfolioItem .content h2{
+        font-size: 9vw;
+    }
+    .portfolioItem .content .description, .portfolioItem .content .tools{
+        font-size: 3.3vw;
+    }
+    .portfolioItem .content button{
+        font-size: 3.5vw;
+    }
+    .portfolioItem{
+        padding: 3vw;
+    }
+
+}

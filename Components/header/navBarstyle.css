@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+
+header {
+    padding: 0 5%;
+    width: 90%;
+    position: relative;
+    z-index: 1000;
+    /* animation */
+    animation-name: navigationSlideDown;
+    animation-duration: 1s;
+}
+
+
+@keyframes navigationSlideDown {
+    from { top: -100px; }
+    to { top: 0; }
+}
+
+.social li {
+    display: inline-block;
+    border: 0;
+    height: 3.2rem;
+}
+
+.social li a {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background: url(../../Assets/naviconMob.png) 0 0 no-repeat;
+    background-size: 200px 500px;
+    text-indent: -9999px;
+    cursor: pointer;
+    padding: 0px;
+}
+.social .twitter a {
+    background-position: -32px -186px;
+}
+.social .linkedin a {
+    background-image: url(../../Assets/ts_logo/round_blue.png);
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 70px;
+    height: 70px;
+}
+.social .facebook a {
+    background-position: 0px -186px;
+}
+
+.navigation{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+header nav li a:hover{
+    color:#e23744;
+}
+
+header{
+    background: #161A1F;
+    height: 7vw;
+    display: flex;
+}
+.icon-nav{
+    display: none;
+}
+
+.logo {
+background-image: url(../../Assets/ts_logo/white.png);
+display: block;
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+width: 4.8vw;
+height: 4.8vw;
+}
+
+header nav {
+float: right;
+display: block;
+font-size: 1.3vw;
+position: static;
+background: transparent;
+width: auto;
+}
+header nav li {
+display: inline-block;
+float: left;
+position: relative;
+border: 0px;
+}
+header nav li a {
+display: block;
+color: #FFF;
+padding: 0 1em;
+text-decoration: none;
+}
+
+
+/* mobile style */
+@media only screen and (max-width: 960px) {
+    header nav{
+        width: 100%;
+        display: none;
+        position: absolute;
+        top: 62px;
+        background: #161A1F;
+    }
+    header nav li{
+        width: 100%;
+        text-align: center;
+        font-size: 6vw;
+        line-height: 3;
+        border-bottom: 1px #686868 solid;
+
+    }
+    header{
+        height: 62px;
+        padding: 0;
+        width: auto;
+    }
+    header .navigation{
+        width: 100%;
+        justify-content: end;
+        color: white;
+    }
+    .logo{
+        width: 50px;
+        height: 50px; 
+        position: absolute;
+        left: 32px;
+    }
+    .icon-nav{
+        margin-right:20px;
+        font-size: 45px;
+        display: block;
+    }
+
+    
+}

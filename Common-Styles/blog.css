@@ -1,0 +1,72 @@
+
+.blogtemplate{
+    max-width: 50%;
+    margin: 94px auto ;
+}
+
+.blogtemplate .blogcontent{
+    font-family: MetroLight;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+}
+
+.blogtemplate h2{
+    font-family: MetroLight;
+    font-size: 4.6rem;
+    margin-bottom: 16px;
+}
+
+.blogtemplate p{
+    font-family: MetroLight;
+    color: #686868;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.blogImage {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+.authorCard{
+    display: flex;
+    align-items: center;
+}
+.authorCard .avatar{
+    border-radius: 50%;
+    border: 2px solid #686868;
+    background-image: url(../Assets/new_main_pic.png);
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 64px;
+    height: 64px;
+}
+.authorTitle span{
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 8px;
+    font-family: MetroLight;
+    font-size: 1.3rem;
+}
+/* mobile style */
+
+@media only screen and (max-width: 960px) {
+    .blogtemplate{
+        max-width: 100%;
+        margin: 36px 0;
+        padding: 0 5%;
+    }
+    .blogtemplate h2 {
+        font-size: 7vw;
+    }
+    .blogtemplate p{
+        font-size: 5vw;
+    }
+}
